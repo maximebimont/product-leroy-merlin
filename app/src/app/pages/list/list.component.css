@@ -1,0 +1,41 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-width: 0;
+  margin: 2rem;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 0;
+  max-width: 100%;
+
+  .table {
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .mat-column-position {
+      min-width: 10em;
+    }
+
+    .mat-column-name {
+      min-width: 10em;
+    }
+
+    .mat-column-weight {
+      min-width: 10em;
+    }
+
+    .mat-column-symbol {
+      min-width: 8em;
+    }
+  }
+}

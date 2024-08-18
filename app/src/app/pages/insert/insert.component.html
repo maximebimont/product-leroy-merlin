@@ -1,0 +1,25 @@
+<button routerLink="/products/home" class="back"><mat-icon>keyboard_backspace</mat-icon> Acceuil</button>
+
+<Header>
+  <h1>Insérer un produit</h1>
+</Header>
+
+<main class="card">
+  <form [formGroup]="form" (submit)="onSubmit()">
+    <div class="form">
+      <mat-form-field appearance="outline">
+        <mat-label>Nom</mat-label>
+        <input matInput formControlName="name">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Prix</mat-label>
+        <input matInput formControlName="price">
+      </mat-form-field>
+    </div>
+
+    <button class="send" mat-raised-button color="primary" [disabled]="!formValid" type="submit">Insérer</button>
+  </form>
+
+  <button mat-raised-button color="primary" routerLink="/products/list">Liste des produits</button>
+</main>
