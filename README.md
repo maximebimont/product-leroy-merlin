@@ -33,6 +33,10 @@ Un repo git sera demandé pour rendre cet exercice
 - Dans le repétoire /api -> lancer la commande `mvn spring-boot:run`
 - Dans le repétoire /app -> lancer la commande `ng serve` ou `npm start`
 
+Ne sachant pas comment votre terminal va réagir les urls sont les suivantes :
+- API : http://localhost:8080/products
+- APP : http://localhost:4200/products
+
 ## Informations supplémentaires
 
 Je n'ai malheuresement pas commits avant la création du répertoire pour montrer l'avancement du projet. 
